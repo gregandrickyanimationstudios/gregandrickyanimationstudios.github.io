@@ -35,4 +35,10 @@ GregAndRickyAnimationStudios creates animated storytelling content, creative ani
 
 ---
 
-*This README is cat-approved 🐈*
+*This README is offically aprooved by Greg of YouTube Channel Greg&RickyAnimationStudios*
+---
+
+## Copyright
+
+© 2026 GregAndRickyAnimationStudios. All rights reserved.
+
