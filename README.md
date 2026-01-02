@@ -40,5 +40,5 @@ Greg&RickyAnimationStudios creates animated storytelling content, creative anima
 
 ## Copyright
 
-© 2026 GregAndRickyAnimationStudios. All rights reserved.
+© 2026 Greg&RickyAnimationStudios. All rights reserved.
 
