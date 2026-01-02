@@ -1,4 +1,4 @@
-# GregAndRickyAnimationStudios
+# Greg&RickyAnimationStudios
 
 Welcome to the official GitHub repository for **GregAndRickyAnimationStudios**, an animation studio and YouTube channel created by Greg.  
 
@@ -8,7 +8,7 @@ This repository hosts the code for the official website: [https://gregandrickyan
 
 ## About the Studio
 
-GregAndRickyAnimationStudios creates animated storytelling content, creative animation projects, and educational videos. This page serves as the official home for the studio online.
+Greg&RickyAnimationStudios creates animated storytelling content, creative animation projects, and educational videos. This page serves as the official home for the studio online.
 
 ---
 
