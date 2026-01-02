@@ -3,17 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="google-site-verification" content="3hL1TjonabLNxokkfzrMH32P2cSad2eRNKEGwWzKe_s" />
-  <title>GregAndRickyAnimationStudios</title>
+  <meta name="google-site-verification" content="3hL1TjonabLNxokkfzrMH32P2cSad2eRNKEGwWzKe_s" />
+  <title>Greg&RickyAnimationStudios</title>
 
-  <meta name="description" content="GregAndRickyAnimationStudios is an animation studio and YouTube channel created by Greg, focused on animated storytelling, creative videos, and animation projects." />
-
-  <!-- Basic SEO / identity signals -->
-  <meta name="author" content="GregAndRickyAnimationStudios" />
+  <meta name="description" content="Greg&RickyAnimationStudios is an animation studio and YouTube channel created by Greg, focused on animated storytelling, creative videos, and animation projects." />
+  <meta name="author" content="Greg&RickyAnimationStudios" />
   <meta name="robots" content="index, follow" />
 
-  <!-- Open Graph (helps previews + Google understanding) -->
-  <meta property="og:title" content="GregAndRickyAnimationStudios" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Greg&RickyAnimationStudios" />
   <meta property="og:description" content="Animation studio and YouTube channel by Greg, featuring animated storytelling and creative content." />
   <meta property="og:type" content="website" />
 
@@ -22,15 +20,25 @@
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
       padding: 0;
-      background: #0f0f0f;
+      background: linear-gradient(-45deg, #0f0f0f, #1a1a1a, #222222, #0f0f0f);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
       color: #eaeaea;
       line-height: 1.6;
+      cursor: default;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position:0% 50%;}
+      50% {background-position:100% 50%;}
+      100% {background-position:0% 50%;}
     }
 
     main {
       max-width: 720px;
       margin: 0 auto;
       padding: 3rem 1.5rem;
+      text-align: center;
     }
 
     h1 {
@@ -38,22 +46,30 @@
       margin-bottom: 0.5rem;
     }
 
+    #greeting {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      color: #7aa2ff;
+    }
+
     p {
       margin-bottom: 1.2rem;
       font-size: 1.05rem;
     }
 
-    a {
-      color: #7aa2ff;
+    a.fun-button {
+      background: #7aa2ff;
+      color: #fff;
+      padding: 0.6rem 1.2rem;
+      border-radius: 12px;
       text-decoration: none;
+      transition: transform 0.2s;
+      display: inline-block;
+      margin-top: 1rem;
     }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .links {
-      margin-top: 2rem;
+    a.fun-button:hover {
+      transform: scale(1.1) rotate(-3deg);
+      background: #5b84d3;
     }
 
     footer {
@@ -61,38 +77,113 @@
       font-size: 0.85rem;
       opacity: 0.7;
     }
+
+    #cat {
+      position: absolute;
+      font-size: 2rem;
+      pointer-events: none;
+    }
+
+    iframe {
+      border-radius: 12px;
+      transition: transform 0.3s;
+      max-width: 100%;
+    }
+    iframe:hover {
+      transform: scale(1.05);
+    }
   </style>
 </head>
 
 <body>
+  <div id="latest-video"></div>
   <main>
-    <h1>GregAndRickyAnimationStudios</h1>
+    
+    <h1>Greg&RickyAnimationStudios</h1>
+    <div id="greeting">Hello Cat-tooners!</div>
 
     <p>
-      <strong>GregAndRickyAnimationStudios</strong> is an animation studio and YouTube channel created by Greg.
+      <strong>Greg&RickyAnimationStudios</strong> is an animation studio and YouTube channel created by Greg.
       The channel focuses on animated storytelling, creative animation projects, and educational content.
     </p>
 
     <p>
-      This site serves as the official home for GregAndRickyAnimationStudios and related animation work.
-      (Also unofficially approved by at least one cat.)
+      This site serves as the official home for Greg&RickyAnimationStudios and related animation work.
+      (Also unofficially approved by at least one cat 🐾.)
     </p>
 
-    <div class="links">
-      <p>
-        ▶️ <a href="https://www.youtube.com/" target="_blank" rel="noopener">
-        Visit the YouTube Channel
-        </a>
-      </p>
+    <a href="https://www.youtube.com/@Ricky-Animator" target="_blank" rel="noopener" class="fun-button">
+      ▶️ Visit the YouTube Channel
+    </a>
+
+    <div style="margin-top:2rem;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/YOURVIDEOID"
+        title="YouTube video player" frameborder="0" allowfullscreen>
+      </iframe>
     </div>
 
     <footer>
-      © <span id="year"></span> GregAndRickyAnimationStudios
+      <hr>
+      <h3>Table of Contents</h3>
+      <ul>
+        <li>🐾 <a href="index.html">Home</a></li>
+        <li>🐾 <a href="shop.html">Shop</a></li>
+      </ul>
+      © <span id="year"></span> Greg&RickyAnimationStudios. All rights reserved.
     </footer>
   </main>
 
+  <div id="cat">🐱</div>
+
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    const greetings = ["Hello Cat-tooners!", "Flip-Book Friends, welcome!", "Whisker Watchers, come on in!"];
+    let i = 0;
+    setInterval(() => {
+      document.getElementById("greeting").textContent = greetings[i];
+      i = (i + 1) % greetings.length;
+    }, 3000);
+
+    const cat = document.getElementById("cat");
+    document.body.addEventListener("mousemove", e => {
+      cat.style.left = (e.pageX + 10) + "px";
+      cat.style.top = (e.pageY + 10) + "px";
+    });
+  </script>
+
+  <!-- Structured data for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Greg&RickyAnimationStudios",
+    "url": "https://gregandrickyanimationstudios.github.io",
+    "sameAs": "https://www.youtube.com/@Ricky-Animator"
+  }
+  </script>
+
+  <!-- YouTube API (FIXED) -->
+  <script>
+    const apiKey = "AIzaSyD8lv3hG9nJ9p2SfGseQbSvFkIqA4IMF4s";
+    const channelId = "UCHvDrA7uymlbVMWfEeiPNwQ";
+    const container = document.getElementById("latest-video");
+
+    fetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet,id&order=date&maxResults=1`)
+      .then(res => res.json())
+      .then(data => {
+        const videoId = data.items[0].id.videoId;
+        container.innerHTML = `
+          <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/${videoId}"
+            title="Latest YouTube video" frameborder="0" allowfullscreen>
+          </iframe>
+        `;
+      })
+      .catch(err => {
+        container.innerHTML = "<p>Could not load latest video.</p>";
+        console.error(err);
+      });
   </script>
 </body>
 </html>
