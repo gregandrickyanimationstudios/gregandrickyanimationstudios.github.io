@@ -92,6 +92,22 @@
     iframe:hover {
       transform: scale(1.05);
     }
+    #latest-video {
+  display: block;      /* make it a block element */
+  margin: 1rem auto;   /* center it horizontally */
+  text-align: center;  /* make sure iframe inside is centered */
+  max-width: 100%;     /* responsive width */
+}
+
+#latest-video iframe {
+  width: 100%;
+  max-width: 560px;    /* same as your iframe width */
+  height: 315px;       /* same as your iframe height */
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;      /* center iframe */
+}
+
   </style>
 </head>
 
