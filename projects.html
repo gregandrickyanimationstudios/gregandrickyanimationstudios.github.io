@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Greg&RickyAnimationStudios</title>
+
+  <meta name="description" content="Creative animation and game projects by Greg&RickyAnimationStudios." />
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(-45deg, #0f0f0f, #1a1a1a, #222222, #0f0f0f);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #eaeaea;
+      line-height: 1.6;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position:0% 50%;}
+      50% {background-position:100% 50%;}
+      100% {background-position:0% 50%;}
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+    }
+
+    a {
+      color: #d3d3d3;
+    }
+
+    a:hover {
+      color: #ffff66;
+    }
+
+    .project-card {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.05);
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 0.85rem;
+      opacity: 0.7;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>🎮 Projects</h1>
+    <p style="text-align:center; opacity:0.85;">
+      Creative works currently in development at Greg&RickyAnimationStudios.
+    </p>
+
+    <div class="project-card">
+      <h3>The Legend of Zelda: Echoes of the Sky</h3>
+
+      <p style="text-align:center; opacity:0.8;">
+        <em>Fan project / narrative concept — early development</em>
+      </p>
+
+      <p>
+        <strong>Echoes of the Sky</strong> is a story-driven Zelda fan project inspired by
+        <em>Skyward Sword</em>. It explores what happens when legends attempt to repeat
+        themselves long after they were meant to end.
+      </p>
+
+      <p>
+        As the Master Sword regresses to its original form, Fi returns as a fractured echo
+        of herself—half light, half darkness—guiding Link through lands that remember more
+        than they should.
+      </p>
+
+      <ul>
+        <li>🗡️ Goddess Sword → Master Sword progression</li>
+        <li>☁️ Sky islands and sealed realms</li>
+        <li>💠 Fi as an echo of ancient balance</li>
+        <li>🌍 Regions tied to Farore, Nayru, Din, Sky, and Darkness</li>
+      </ul>
+
+      <p style="opacity:0.8;">
+        This project is currently in the writing and concept phase.
+        Updates will be shared on YouTube and Patreon.
+      </p>
+    </div>
+        <footer>
+      <hr>
+      <p>
+        🐾 <a href="index.html">Back to Home</a> |
+        🐾 <a href="shop.html">Shop</a>
+      </p>
+      © <span id="year"></span> Greg&RickyAnimationStudios
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
